@@ -1,0 +1,299 @@
+//============================
+//   FOOTPRINT
+//============================
+
+.footprint {
+  width: 100%;
+  background-image: radial-gradient(#161415, #161415);
+  .footprint__content {
+    background-image: url(bgImage/image-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 2;
+    padding: 300px 90px 90px 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media all and (max-width: 900px) {
+      width: 100%;
+      padding: 50px 20px 40px 50px;
+    }
+    @media all and (max-width: 767px) {
+      padding-left: 20px;
+    }
+    .footprint__title {
+      @include text(3.9rem, '', bold, uppercase);
+      color: $GREEN;
+      line-height: 60px;
+      margin-bottom: 30px;
+      @media all and (max-width: 900px) {
+        font-size: 40px;
+      }
+    }
+    .footprint__text {
+      @include text(15px, '', 500);
+      color: $HEADER__TEXT;
+      margin-bottom: 20px;
+      width: 440px;
+      @media all and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    .footprint__down {
+      @include text(60px, '', 500, uppercase);
+      color: $GREEN;
+      line-height: 60px;
+      margin-top: 40px;
+      @media all and (max-width: 900px) {
+        font-size: 40px;
+      }
+      .down__icon {
+        width: 40px;
+      }
+    }
+  }
+  .footprint__examples {
+    background-color: $MINTING_BG;
+    display: flex;
+    flex-wrap: wrap;
+
+    .example__box {
+      width: 25%;
+      // height: 300px;
+      border: 1px solid $GREEN;
+      object-fit: fill;
+      @media all and (max-width: 900px) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+//==================================
+//         EXCLUSIVE
+//==================================
+.exclusive {
+  background-color: $HEADER__TEXT;
+  padding: 70px 80px 90px;
+  @media all and (max-width: 900px) {
+    padding: 50px 20px 40px 50px;
+  }
+  @media all and (max-width: 767px) {
+    padding-left: 20px;
+  }
+  .exclusive__title {
+    @include text(50px, '', 600, uppercase);
+    color: #03F857;
+    line-height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $BLACK;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+  .exclusive__content {
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .exclusive__width {
+      width: 48%;
+      // color: rgb(104, 238, 77);
+      @media all and (max-width: 900px) {
+        width: 100%;
+      }
+      .exclusive__question {
+        @include text(1.4rem, '', bold);
+        color: #03F857;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+      .exclusive__continue {
+        @include text(16px, '', bold);
+        // color: #03F857;
+      }
+      .exclusive__subtitle {
+        @include text(26px, 2px, bold);
+        margin-bottom: 50px;
+        &:not(:last-child){
+          margin-bottom: 50px;
+        }
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+      .exclusive__answer {
+        @include text(16px, 1px, '');
+        &:not(:last-child){
+          margin-bottom: 50px;
+        }
+        @media (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+//==================================
+//         ROADMAP
+//==================================
+.roadmap {
+  background-color: $GREEN;
+  padding: 70px 80px 90px;
+  @media all and (max-width: 900px) {
+    padding: 50px 20px 40px 50px;
+  }
+  @media all and (max-width: 767px) {
+    padding-left: 20px;
+  }
+  .roadmap__title {
+    @include text(50px, '', 600, uppercase);
+    color: $BLACK;
+    line-height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $BLACK;
+    margin-bottom: 30px;
+    @media all and (max-width: 900px) {
+      font-size: 40px;
+    }
+  }
+  .roadmap__subtitle {
+    @include text(25px, '', '');
+    color: $BLACK;
+    margin-bottom: 20px;
+    @media all and (max-width: 900px) {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.launch {
+  padding: 50px 80px 150px;
+  background-color: $HEADER__TEXT;
+  @media all and (max-width: 900px) {
+    padding: 50px 20px 40px 40px;
+  }
+  @media all and (max-width: 767px) {
+    padding-left: 20px;
+  }
+  .launch__title {
+    @include text(50px, '', 600, uppercase);
+    color: $BLACK;
+    line-height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $BLACK;
+    margin-bottom: 30px;
+    @media all and (max-width: 900px) {
+      font-size: 35px;
+    }
+  }
+  .launch__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    @media all and (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .info__name {
+      @include text(50px, '', 600, uppercase);
+      color: $GREEN;
+      @media all and (max-width: 900px) {
+        font-size: 30px;
+      }
+      @media all and (max-width: 480px) {
+        font-size: 24px;
+      }
+    }
+    .info__price {
+      @include text(50px, '', '', uppercase);
+      position: relative;
+      margin-left: 30px;
+      .price_sup {
+        position: absolute;
+        font-size: 16px;
+        left: 0;
+        top: calc(100% - 10px);
+      }
+      @media all and (max-width: 900px) {
+        font-size: 25px;
+        margin-left: 15px;
+        text-align: center;
+        .price_sup {
+          font-size: 12px;
+        }
+      }
+      @media all and (max-width: 480px) {
+        margin-left: 0;
+        font-size: 20px;
+        text-align: left;
+        .price_sup {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//==================================
+//         FAQ
+//==================================
+.faq {
+  background-color: $GREEN;
+  padding: 70px 80px 90px;
+  @media all and (max-width: 900px) {
+    padding: 50px 20px 40px 50px;
+  }
+  @media all and (max-width: 767px) {
+    padding-left: 20px;
+  }
+  .faq__title {
+    @include text(50px, '', 600, uppercase);
+    color: $BLACK;
+    line-height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $BLACK;
+    margin-bottom: 30px;
+  }
+  .faq__content {
+    display: flex;
+    justify-content: space-between;
+    @media all and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .faq__width {
+      width: 48%;
+      @media all and (max-width: 900px) {
+        width: 100%;
+      }
+
+      .faq__question {
+        @include text(16px, '', bold);
+      }
+      .faq__continue {
+        @include text(16px, '', bold);
+      }
+      .faq__subtitle {
+        @include text(26px, 2px, bold);
+        margin-bottom: 20px;
+      }
+      .faq__answer {
+        @include text(16px, 1px, '');
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

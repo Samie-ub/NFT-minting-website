@@ -1,0 +1,101 @@
+.page-team {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  @media all and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .team__member-name {
+    @include text(20px, '', bold, uppercase);
+    color: $GREEN;
+    padding-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid $GREEN;
+    margin-bottom: 15px;
+    span{
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+  .team_member-more{
+    @include text(0.9rem, '', '');
+    color: $GREEN;
+    text-align: center;
+    @media (max-width:900px) {
+      font-size: 10px;
+    }
+  }
+
+  .team__member{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: unset;
+    transition: all 0.3s ease-in-out;
+    @media all and (max-width: 900px) {
+      width: 100%;
+      height: 200px;
+    }
+    
+    .team__member-info{
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      right: 50px;
+      background: #000;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-in;
+      padding: 30px;
+    }
+
+    .team__member-content{
+      opacity: 0;
+      transition: all 0.3s ease-in;
+      transform: translate3d(0, -60px, 0);
+    }
+    
+    
+    &:hover {
+      width: 32.6%;
+      .team__member-info{
+        opacity: 1;
+        transition: all 0.3s 0.3s ease-in;
+      }
+      .team__member-content{
+        transform: translate3d(0, 0px, 0);
+        opacity: 1;
+        transition: all 0.3s 0.3s ease-in;
+      }
+
+      @media all and (max-width: 900px) {
+        height: 400px;
+        width: 100%;
+      }
+    }
+    &:nth-child(1){
+      background-image: url('../../assets/naon-web.jpeg');
+    }
+    &:nth-child(2){
+
+      background-image: url('../../assets/Gigi-web.jpg');
+    }
+    &:nth-child(3){
+      background-image: url('../../assets/Kashif.jpg');
+    }
+    &:nth-child(4){
+      background-image: url('../../assets/Dennis.jpg');
+    }
+    &:nth-child(5){
+      background-image: url('../../assets/arrowhead.jpg');
+    }
+  }
+}

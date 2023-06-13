@@ -1,0 +1,51 @@
+.terms-service {
+  padding: 160px 27px 50px 27px;
+  background: $GREEN;
+
+  .service__heading {
+    @include text(3rem, '', bold, uppercase);
+    color: $BLACK;
+    width: 55%;
+    display: flex;
+
+    justify-content: center;
+    text-align: start;
+    padding: 12px 50px;
+
+    @media all and (max-width: 900px) {
+      font-size: 2.3rem;
+      display: flex;
+      justify-content: center;
+      width: 60%;
+
+    }
+    @media all and (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .content__heading {
+      text-transform: capitalize;
+    }
+
+  }
+
+  .content__heading {
+    text-transform: capitalize;
+  }
+
+  .service__content {
+    width: 40%;
+    .content__heading {
+      @include text(22px, '', 500, uppercase);
+      color: $BLACK;
+
+      margin-top: 50px;
+    }
+    .content__description {
+      @include text(17px, 0.02em, 400);
+      color: $BLACK;
+      margin: 15px 0 70px;
+    }
+  }
+}

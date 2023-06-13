@@ -1,0 +1,86 @@
+.minting-process {
+  padding: 160px 27px 50px 27px;
+  background: #000;
+  .process__top {
+    @include text(3rem, 1px, bold, uppercase);
+    margin-bottom: 20px;
+    text-align: center;
+    color: #575f61;
+    text-transform: uppercase;
+    @media (max-width:900px) {
+      font-size: 2.3rem;
+    }
+  }
+  .mint-btn-container{
+  display:flex;
+  }
+  .progress-container{
+    margin: 0 50px;
+  }
+  .banner__button {
+    margin-top: 50px;
+    width: 250px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include text(25px, '', bold, uppercase);
+    color: $GREEN;
+    border: 1px solid $GREEN;
+    outline: none;
+    background-color: #000;
+    @media (min-width: 900px) and (max-width: 1399.98px) { 
+      display: none;
+     }
+  }
+
+  .process__title {
+    @include text(3rem, 1px, bold, uppercase);
+    margin-bottom: 20px;
+    text-align: center;
+    color: $GREEN;
+    text-transform: uppercase;
+    @media (max-width:900px) {
+      font-size: 2.3rem;
+    }
+  }
+
+.progressbar-container{
+ width: 80%;
+ display: flex;
+ justify-content: center;
+}
+  .process__sub {
+    @include text(2rem, 1px, bold, uppercase);
+    margin-bottom: 50px;
+    text-align: center;
+    color: #575f61;
+    text-transform: uppercase;
+    @media (max-width:900px) {
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+    }
+  }
+  .process__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .green--button{
+    border-radius: 0;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 50px;
+    @media (max-width:900px) {
+      margin-bottom: 30px;
+      font-size: 24px;
+      padding: 10px 20px;
+      height: auto;
+    }
+  }
+  .project_image{
+    max-width: 100%;
+    display: block;
+  }
+
+}

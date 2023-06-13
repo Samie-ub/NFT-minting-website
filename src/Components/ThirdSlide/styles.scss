@@ -1,0 +1,67 @@
+.minting {
+  background-image: url('../../assets/web/slide3.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  @media all and (max-width: 900px) {
+    background-size: cover;
+    background-position: center;
+    background-repeat: revert;
+  }
+  .minting__content {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 32vh;
+    margin-left: 110px;
+    @media all and (max-width: 900px) {
+      justify-content: flex-end;
+      height: 100%;
+      padding: 50px 20px 20px;
+      text-align: left;
+      margin-left: 0;
+      overflow: auto;
+    }
+    .content__process {
+      @include text(15px, '', 500, capital);
+      letter-spacing: 3px;
+      color: $WHITE;
+    }
+    .content__heading {
+      @include text(3.9rem, '', bold, uppercase);
+      color: $GREEN;
+      margin: 15px 0px;
+      @media all and (max-width: 900px) {
+        font-size: 40px;
+      }
+    }
+    .number{
+      color: $GREEN;
+    }
+    .content__desc {
+      @include text(15px, '', '');
+      color: $WHITE;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+    .content__details {
+      cursor: pointer;
+      @include text(16px, '', '');
+      color: $WHITE;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      .details__logo {
+        width: 16px;
+        margin-right: 10px;
+      }
+      &:hover{
+        .details__logo{
+          //display: none !important;
+          animation: booping .5s ease-in-out forwards;
+        }
+      }
+    }
+  }
+}

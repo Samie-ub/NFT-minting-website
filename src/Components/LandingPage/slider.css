@@ -1,0 +1,14 @@
+.slider-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .awssld__bullets{
+      position: absolute;
+      bottom: 30px!important;
+z-index: 2;
+    }
+
+    .awssld__wrapper{
+        height: 100vh !important;
+    }

@@ -1,0 +1,16 @@
+{
+  "CONTRACT_ADDRESS": "0x358e3F341796Aac1C360E4794FcFfEDCd9Ee353c",
+  "SCAN_LINK": "https://explorer.emerald.oasis.dev/token/0x358e3F341796Aac1C360E4794FcFfEDCd9Ee353c/token-transfers",
+  "NETWORK": {
+    "NAME": "Emerald Mainnet",
+    "SYMBOL": "ROSE",
+    "ID": 42262
+  },
+  "NFT_NAME": "Diamondfoot Mintpass",
+  "SYMBOL": "DFTM",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 100000000000000000,
+  "DISPLAY_COST": 0.1,
+  "GAS_LIMIT": 50000,
+  "SHOW_BACKGROUND": true
+}

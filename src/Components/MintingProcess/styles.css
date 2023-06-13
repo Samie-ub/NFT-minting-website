@@ -1,0 +1,13 @@
+.btn-tbn{
+     margin-top: 50px;
+     width: 250px;
+     height: 90px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: GREEN;
+     border: 1px solid GREEN;
+     outline: none;
+     background-color: #000;
+   }
+ 

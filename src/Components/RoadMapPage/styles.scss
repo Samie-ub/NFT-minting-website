@@ -1,0 +1,89 @@
+.roadmap-page {
+  padding: 160px 27px 50px 27px;
+  background: $GREEN;
+
+  .roadmap__heading {
+    @include text(3rem, '', bold, uppercase);
+    color: $BLACK;
+    width: 55%;
+    display: flex;
+
+    justify-content: flex-start;
+    text-align: left;
+    padding: 12px 50px;
+    margin-bottom: 50px;
+
+    @media all and (max-width: 900px) {
+      font-size: 2.3rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    @media all and (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .content__heading {
+      text-transform: capitalize;
+    }
+  }
+
+  .roadmap-item-title{
+    @include text(2rem, '', 400, uppercase);
+    color: $BLACK;
+    padding: 10px 0;
+  }
+
+  .roadmap-info-title{
+    @include text(1rem, '', '');
+    color: $BLACK;
+    margin: 0;
+    padding: 10px 0;
+    @media all and (max-width: 900px) {
+      //font-size: 20px;
+    }
+  }
+
+  .content__heading {
+    text-transform: capitalize;
+  }
+
+  .service__content {
+    width: 40%;
+    .content__heading {
+      @include text(22px, '', 500, uppercase);
+      color: $BLACK;
+
+      margin-top: 50px;
+    }
+    .content__description {
+      @include text(17px, 0.02em, 400);
+      color: $BLACK;
+      margin: 15px 0 70px;
+    }
+  }
+  .roadmap-container{
+    padding: 0px 50px;
+    @media all and (max-width: 991px) {
+      padding: 0;
+    }
+  }
+  .roadmap-item {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+    &:not(:last-child){
+      border-bottom: 1px solid #000;
+    }
+
+    @media all and (max-width: 959px) {
+      text-align: center;
+    }
+    @media (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

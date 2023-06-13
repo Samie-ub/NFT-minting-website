@@ -1,0 +1,19 @@
+@import './color.scss';
+@include custom-classes;
+@include colors;
+
+@import '../src/Components/common/styles.scss';
+
+@import '../src/Components/styles.scss';
+@import '../src/Components/FirstSlide/styles.scss';
+@import '../src/Components/SecondSlide/styles.scss';
+@import '../src/Components/ThirdSlide/styles.scss';
+@import '../src/Components/FourthSlide/styles.scss';
+@import '../src/Components/FifthSlide/styles.scss';
+@import '../src/Components/MintingProcess/styles.scss';
+@import '../src/Components/Projects/styles.scss';
+@import '../src/Components/TeamPage/styles.scss';
+@import '../src/Components/AboutPage/style.scss';
+
+@import '../src/Components/TermsOfServicePage/styles.scss';
+@import '../src/Components/RoadMapPage/styles.scss';

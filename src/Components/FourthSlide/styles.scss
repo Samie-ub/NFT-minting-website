@@ -1,0 +1,69 @@
+
+.slide4 {
+  background-image: url('../../assets/web/slide4.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  @media all and (max-width: 900px) {
+    background-size: cover;
+    background-position: center;
+    background-repeat: revert;
+  }
+  .slide4__content {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 32vh;
+    margin-left: 110px;
+    @media all and (max-width: 900px) {
+      justify-content: flex-end;
+      height: 100%;
+      padding: 50px 20px 20px;
+      text-align: left;
+      margin-left: 0;
+    }
+    .content__process {
+      @include text(15px, '', 500, capital);
+      letter-spacing: 8px;
+      color: $WHITE;
+    }
+    .content__heading {
+      @include text(3.9rem, '', bold, uppercase);
+      color: $GREEN;
+      margin: 15px 0px;
+      @media all and (max-width: 900px) {
+        font-size: 2.4rem;
+      }
+    }
+    .content__desc {
+      @include text(15px, '', '');
+      color: $WHITE;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      @media all and (max-width: 667px) {
+        br{
+          display: none;
+        }
+      }
+    }
+    .content__details {
+      @include text(16px, '', '');
+      color: $WHITE;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      align-self: flex-start;
+      .details__logo {
+        width: 16px;
+        margin-right: 10px;
+      }
+      &:hover{
+        .details__logo{
+          //display: none !important;
+          animation: booping .5s ease-in-out forwards;
+        }
+      }
+    }
+  }
+}
